@@ -1,0 +1,403 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #0f172a);
+}
+
+.hero-content{
+
+    text-align:center;
+    max-width:900px;
+    padding:40px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.subtitle{
+
+    font-size:1.4rem;
+    color:#93c5fd;
+    margin-bottom:20px;
+}
+
+.descricao{
+
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.skills{
+
+    padding:100px 10%;
+}
+
+.skills h2{
+
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.skills-grid div{
+
+    background:#1e293b;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:12px;
+}
+
+#projetos{
+
+    padding:100px 10%;
+
+    background:#111827;
+}
+
+#projetos h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    margin-bottom:50px;
+}
+
+.cards-projetos{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.card-projeto{
+
+    width:420px;
+
+    height:220px;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #1e293b);
+
+    padding:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.card-projeto:hover{
+
+    transform:translateY(-10px);
+}
+
+.card-projeto h3{
+
+    margin-top:100px;
+
+    font-size:1.5rem;
+}
+
+.card-projeto p{
+
+    color:#cbd5e1;
+}
+
+.detalhes{
+
+    display:none;
+
+    margin-top:40px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:40px;
+}
+
+.titulo-projeto{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.conteudo{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+}
+
+.texto{
+
+    flex:1;
+
+    min-width:300px;
+}
+
+.texto h4{
+
+    margin-bottom:15px;
+    margin-top:20px;
+}
+
+.texto p{
+
+    line-height:1.8;
+}
+
+.texto ul{
+
+    padding-left:20px;
+    line-height:2;
+}
+
+.galeria{
+
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:15px;
+}
+
+.galeria img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:10px;
+    
+}
+.cabecalho-projeto{
+
+display:flex;
+
+align-items:flex-start;
+
+justify-content:space-between;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+}
+
+.descricao-projeto{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.descricao-projeto p{
+
+margin-top:15px;
+
+line-height:1.8;
+
+}
+
+.secao-projeto{
+
+margin-top:40px;
+
+}
+
+.secao-projeto h4{
+
+color:#93c5fd;
+
+margin-bottom:15px;
+
+}
+
+.secao-projeto p{
+
+line-height:1.9;
+
+}
+
+.cards-internos{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card-info{
+
+background:#0f172a;
+
+border:1px solid #334155;
+
+border-radius:12px;
+
+padding:25px;
+
+}
+
+.card-info h4{
+
+margin-bottom:15px;
+
+color:#93c5fd;
+
+}
+
+.card-info ul{
+
+padding-left:20px;
+
+line-height:2;
+
+}
+
+.galeria{
+
+display:flex;
+
+gap:15px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.galeria img{
+
+width:220px;
+
+height:220px;
+
+object-fit:contain;
+
+background:white;
+
+padding:10px;
+
+border-radius:10px;
+
+}
+
+@media(max-width:900px){
+
+.cards-internos{
+
+    grid-template-columns:1fr;
+}
+
+.cabecalho-projeto{
+
+    flex-direction:column;
+}
+
+} .hero-stats{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    flex-wrap:wrap;
+}
+
+.hero-stats h3{
+
+    font-size:2rem;
+
+    color:#93c5fd;
+}
+
+.hero-stats span{
+
+    color:#cbd5e1;
+}
+ 
